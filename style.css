@@ -1,0 +1,48 @@
+body{
+background-color:black;
+    color:white;
+}
+header{
+    position:relative;
+    height:90vh;
+    font-weight: bold;
+    background:url("buddha-219885_1280.jpg") center / cover;
+    
+}
+a.cp_btn {
+	display: block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border:1px solid #8BC34A;
+	background: #8BC34A;
+	overflow: hidden;
+	z-index: 1 !important;
+}
+a.cp_btn:after {
+	content:"";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 0;
+	width: 100%;
+	background : #fff;
+	opacity: 0;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transition: 0.3s;
+	z-index: -1;
+}
+a.cp_btn:hover {
+	color: #3cb371;
+}
+a.cp_btn:hover:after {
+	height: 250%;
+	opacity: 1;
+}
+a.cp_btn:active:after {
+	height: 350%;
+	opacity: 1;
+}
